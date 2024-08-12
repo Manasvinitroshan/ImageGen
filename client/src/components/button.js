@@ -22,10 +22,10 @@ const Button = styled.div`
   ${({ type, theme }) =>
     type === "secondary"
       ? `
-  background: ${theme.secondary};
+  background: orange;
   `
       : `
-  background: ${theme.primary};
+  background: blue;
 `}
 
   ${({ isDisabled }) =>
