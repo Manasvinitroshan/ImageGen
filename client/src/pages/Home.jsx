@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled';
+import Searchbar from '../components/Searchbar';
+
 
 const Container = styled.div`
   min-height: 100%; /* Ensures the container takes up the full viewport height */
@@ -24,7 +26,7 @@ const Home = () => {
     <Container>
 
         <h1>Explore Posts made by AI</h1>
-      
+        <Searchbar/>
 
 
 
