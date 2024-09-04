@@ -35,11 +35,12 @@ const Input = styled.input`
   font-size: 14px;
   outline: none;
   border: none;
-  background-color: transparent;
+  background-color: ${({ theme }) => theme.text_primary};
   color: ${({ theme }) => theme.text_secondary};
   &:focus {
     outline: none;
   }
+  border-radius:30px
 `;
 
 const TextInput = ({

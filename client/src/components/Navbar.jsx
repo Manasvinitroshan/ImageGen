@@ -18,6 +18,8 @@ const Container = styled.div`
   @media only screen and (max-width: 600px) {
     padding: 10px 12px;
   }
+
+  
 `;
 
 const Navbar = () => {

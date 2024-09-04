@@ -6,14 +6,14 @@ import ImageCard from '../pages/ImageCard';
 
 
 const Container = styled.div`
-  min-height: 25%; /* Ensures the container takes up the full viewport height */
+  min-height: 2%; /* Ensures the container takes up the full viewport height */
   overflow-y:scroll;
   align-items: center;
   display: flex;
   padding: 30px 30px;
   padding-bottom: 40px;
   flex-direction: column;
-  gap: 20px;
+  gap: 2px;
   @media (max-width: 768){
 
     padding: 6px 10px;
@@ -51,10 +51,18 @@ const CardWrapper = styled.div`
 
   width:120px
   height:120px
+  
 `;
 
 
 const Home = () => {
+
+  const item={
+
+    photo:"https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png",
+    author: "Manas",
+    prompt: "Hey this is my first post",
+  }
   return (
     <Container>
 
@@ -64,7 +72,21 @@ const Home = () => {
 
       <Wrapper>
         <CardWrapper>
-          <ImageCard />
+          <ImageCard  item={item} />
+          <ImageCard  item={item} />
+
+          <ImageCard  item={item} />
+
+          <ImageCard  item={item} />
+          <ImageCard  item={item} />
+          <ImageCard  item={item} />
+
+          <ImageCard  item={item} />
+          <ImageCard  item={item} />
+          <ImageCard  item={item} />
+          <ImageCard  item={item} />
+
+          <ImageCard  item={item} /> 
           <ImageCard />
           <ImageCard />
         </CardWrapper>
