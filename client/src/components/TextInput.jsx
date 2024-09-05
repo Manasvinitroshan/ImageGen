@@ -6,6 +6,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   gap: 4px;
+  border-color:white;
 `;
 
 const Label = styled.label`
@@ -13,6 +14,7 @@ const Label = styled.label`
   color: ${({ theme }) => theme.text_secondary};
   padding: 0px 4px;
   text-transform: uppercase;
+  border-color:white
 `;
 
 const OutlinedInput = styled.div`
@@ -26,7 +28,7 @@ const OutlinedInput = styled.div`
   align-items: center;
   gap: 12px;
   &:focus-within {
-    border-color: ${({ theme }) => theme.primary};
+    border-color: white;
   }
 `;
 
@@ -35,12 +37,13 @@ const Input = styled.input`
   font-size: 14px;
   outline: none;
   border: none;
-  background-color: ${({ theme }) => theme.text_primary};
-  color: ${({ theme }) => theme.text_secondary};
+  border-color: transparent;
+  background-color: white;
+  color: ${({ theme }) => theme.text_primary};
   &:focus {
     outline: none;
   }
-  border-radius:30px
+  
 `;
 
 const TextInput = ({
